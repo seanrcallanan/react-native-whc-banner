@@ -443,7 +443,8 @@ export default class Banner extends Component {
                     onMomentumScrollEnd = {this._onMomentumScrollEnd}
                     onScrollBeginDrag = {this._onScrollBeginDrag}
                     onScrollEndDrag = {this._onScrollEndDrag}
-                    onScroll = {this._onScroll}>
+                    onScroll = {this._onScroll}
+                    scrollEventThrottle={50}>
                     {newChildren}
                 </ScrollView>
                 <BannerIndicater
